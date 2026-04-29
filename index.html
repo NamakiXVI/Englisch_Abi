@@ -669,42 +669,17 @@
             width: 16px;
             height: 16px;
         }
-        .table-wrap {
-            overflow-x: auto;
-            margin: 8px 0;
-        }
-        .mini-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 12.5px;
-            color: var(--color-text-secondary);
-        }
-        .mini-table th,
-        .mini-table td {
-            border: 1px solid var(--color-border-tertiary);
-            padding: 8px 10px;
-            text-align: left;
-            vertical-align: top;
-        }
-        .mini-table th {
-            background: var(--color-surface-tertiary);
-            font-weight: 600;
-            color: var(--color-text-primary);
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-        }
-        .highlight-box {
+        .stat-box {
             background: var(--color-accent2-light);
             border: 1px solid var(--color-accent2);
             border-radius: var(--radius-md);
-            padding: 12px 16px;
-            margin: 8px 0;
-            font-size: 13px;
+            padding: 10px 14px;
+            margin: 6px 0;
+            font-size: 12.5px;
             color: var(--color-text-secondary);
             line-height: 1.6;
         }
-        html[data-theme="dark"] .highlight-box {
+        html[data-theme="dark"] .stat-box {
             background: var(--color-accent2-light);
         }
         @media (max-width: 640px) {
@@ -790,25 +765,6 @@
             .info-block {
                 font-size: 12px;
                 padding: 10px 12px;
-            }
-        }
-        @media (max-width: 380px) {
-            .main-tab {
-                padding: 7px 9px;
-                font-size: 10.5px;
-                min-height: 34px;
-                min-width: 34px;
-            }
-            .sub-tab {
-                padding: 5px 8px;
-                font-size: 10px;
-                min-height: 28px;
-            }
-            .card {
-                padding: 12px 10px;
-            }
-            .card-header h2 {
-                font-size: 1rem;
             }
         }
     </style>
@@ -1172,15 +1128,53 @@
                     id: 'topic-q1',
                     label: 'Q1: Aims & Ambitions',
                     title: 'Q1: Aims & Ambitions – Individual & Society',
-                    def: 'Persönliche Ziele im Leben (Karriere, Bildung, Selbstverwirklichung) – Spannungsfeld zwischen individuellen Träumen und gesellschaftlichen Erwartungen.',
+                    def: 'Wie Individuen ihr Leben und ihre Ziele innerhalb der Gesellschaft gestalten. Persönliche Ziele (Karriere, Bildung, Selbstverwirklichung) im Spannungsfeld zwischen individuellen Träumen und gesellschaftlichen Erwartungen.',
                     content: `
+                <h4>Wichtige Begriffe (Important Vocab)</h4>
+                <div class="vocab-grid">
+                  <div class="vocab-item"><span class="en">aims</span><span class="de">langfristige Lebensziele</span></div>
+                  <div class="vocab-item"><span class="en">ambitions</span><span class="de">starker Wunsch nach Erfolg</span></div>
+                  <div class="vocab-item"><span class="en">self-fulfilment</span><span class="de">persönliche Erfüllung</span></div>
+                  <div class="vocab-item"><span class="en">career path</span><span class="de">berufliche Entwicklung</span></div>
+                  <div class="vocab-item"><span class="en">work-life balance</span><span class="de">Balance Arbeit & Privatleben</span></div>
+                  <div class="vocab-item"><span class="en">peer pressure</span><span class="de">Gruppendruck</span></div>
+                  <div class="vocab-item"><span class="en">social mobility</span><span class="de">soziale Auf-/Abstiegsmobilität</span></div>
+                  <div class="vocab-item"><span class="en">self-realization</span><span class="de">Selbstverwirklichung</span></div>
+                  <div class="vocab-item"><span class="en">determination</span><span class="de">Entschlossenheit</span></div>
+                  <div class="vocab-item"><span class="en">perseverance</span><span class="de">Ausdauer</span></div>
+                  <div class="vocab-item"><span class="en">trade-off</span><span class="de">Abwägung</span></div>
+                  <div class="vocab-item"><span class="en">conformity</span><span class="de">Konformität</span></div>
+                  <div class="vocab-item"><span class="en">non-conformism</span><span class="de">Nonkonformismus</span></div>
+                  <div class="vocab-item"><span class="en">materialism</span><span class="de">Materialismus</span></div>
+                  <div class="vocab-item"><span class="en">self-esteem</span><span class="de">Selbstwertgefühl</span></div>
+                  <div class="vocab-item"><span class="en">fulfillment</span><span class="de">Erfüllung</span></div>
+                </div>
                 <h4>Key Ideas</h4>
                 <div class="info-block">
-                  <ul><li>Persönliche Ziele: Karriere, Bildung, Selbstverwirklichung</li>
+                  <ul><li><strong>Aims:</strong> Langfristige Ziele im Leben</li>
+                  <li><strong>Ambitions:</strong> Starkes Verlangen, Erfolg zu erreichen</li>
+                  <li><strong>Selbstverwirklichung:</strong> Persönliche Zufriedenheit erreichen</li>
                   <li>Beeinflusst durch: sozialen Hintergrund, Bildung, Geschlecht, Chancen</li>
                   <li>Konflikt: individuelle Träume vs. gesellschaftliche Erwartungen</li>
                   <li>Motivation: intrinsisch (Leidenschaft) vs. extrinsisch (Geld, Status)</li>
                   <li>Barrieren: Ungleichheit, fehlender Zugang, Diskriminierung</li></ul>
+                </div>
+                <h4>Importance of Ambition</h4>
+                <div class="info-block">
+                  <ul><li>Motivation, hart zu arbeiten</li>
+                  <li>Fördert Innovation und Fortschritt</li>
+                  <li>Wirtschaftswachstum</li></ul>
+                </div>
+                <h4>Work-Life Balance</h4>
+                <div class="info-block">
+                  <strong>Was viele junge Menschen heute wollen:</strong><br>
+                  • Flexible Arbeitszeiten<br>
+                  • Sinnvolle Arbeit und sinnvolles Leben<br>
+                  • Zeit für Familie und Hobbys<br><br>
+                  <strong>Statistiken:</strong><br>
+                  • Rund 70% der Arbeitnehmer fühlen sich bei der Arbeit unengagiert (Gallup-Studie)<br>
+                  • Fast jeder dritte Erwachsene berichtet von Burnout-Symptomen<br>
+                  • In den meisten Industrieländern arbeiten Menschen rund 40 Stunden pro Woche
                 </div>
                 <h4>Into the Wild – Christopher McCandless</h4>
                 <div class="info-block">
@@ -1199,40 +1193,58 @@
                   <strong>Anti-Konsumismus:</strong> Hinterfragt exzessives Kaufen & Materialismus. Glück ≠ Besitz. Oft mit Umweltschutz verbunden.<br><br>
                   <strong>Erwartungen der Gesellschaft:</strong> Klare Vorstellungen über Aussehen, Verhalten, Erfolg. Kommen von Eltern, Schule, Social Media. Können motivieren – aber auch Stress & Angst erzeugen.<br><br>
                   <strong>Generationskonflikt:</strong> Unterschiedliche Werte, Freiheitsvorstellungen, Einstellungen zu Technologie & Autorität. Jüngere wollen mehr Freiheit, Ältere erwarten mehr Gehorsam.
-                </div>
-                <h4>Key Vocabulary</h4>
-                <div class="vocab-grid">
-                  <div class="vocab-item"><span class="en">self-realization</span><span class="de">Selbstverwirklichung</span></div>
-                  <div class="vocab-item"><span class="en">ambition</span><span class="de">Ehrgeiz</span></div>
-                  <div class="vocab-item"><span class="en">upward mobility</span><span class="de">sozialer Aufstieg</span></div>
-                  <div class="vocab-item"><span class="en">determination</span><span class="de">Entschlossenheit</span></div>
-                  <div class="vocab-item"><span class="en">perseverance</span><span class="de">Ausdauer</span></div>
-                  <div class="vocab-item"><span class="en">trade-off</span><span class="de">Abwägung</span></div>
-                  <div class="vocab-item"><span class="en">conformity</span><span class="de">Konformität</span></div>
-                  <div class="vocab-item"><span class="en">non-conformism</span><span class="de">Nonkonformismus</span></div>
-                  <div class="vocab-item"><span class="en">peer pressure</span><span class="de">Gruppendruck</span></div>
-                  <div class="vocab-item"><span class="en">materialism</span><span class="de">Materialismus</span></div>
-                  <div class="vocab-item"><span class="en">self-esteem</span><span class="de">Selbstwertgefühl</span></div>
-                  <div class="vocab-item"><span class="en">fulfillment</span><span class="de">Erfüllung</span></div>
                 </div>`
                 },
                 q2: {
                     id: 'topic-q2',
                     label: 'Q2: USA',
                     title: 'Q2: USA – A Nation Between Tradition and Change',
-                    def: 'Die USA im Spannungsfeld zwischen kulturellem Erbe und modernen Entwicklungen. Themen: American Dream, Immigration, Gun Control, Racial Issues.',
+                    def: 'Die USA – geprägt von Immigration, kultureller Vielfalt und sozialem/politischem Wandel. Themen: American Dream, Immigration, Gun Control, Racial Issues.',
                     content: `
+                <h4>Wichtige Begriffe (Important Vocab)</h4>
+                <div class="vocab-grid">
+                  <div class="vocab-item"><span class="en">American Dream</span><span class="de">Jeder kann durch harte Arbeit Erfolg haben</span></div>
+                  <div class="vocab-item"><span class="en">Melting Pot</span><span class="de">Schmelztiegel – Kulturen verschmelzen</span></div>
+                  <div class="vocab-item"><span class="en">Salad Bowl</span><span class="de">Salatschüssel – Kulturen bleiben unterscheidbar</span></div>
+                  <div class="vocab-item"><span class="en">multiculturalism</span><span class="de">Multikulturalismus – Koexistenz verschiedener Kulturen</span></div>
+                  <div class="vocab-item"><span class="en">racial inequality</span><span class="de">ungleiche Behandlung aufgrund von Rasse</span></div>
+                  <div class="vocab-item"><span class="en">identity</span><span class="de">kulturelle/nationale Selbstdefinition</span></div>
+                  <div class="vocab-item"><span class="en">cultural heritage</span><span class="de">kulturelles Erbe</span></div>
+                  <div class="vocab-item"><span class="en">social change</span><span class="de">sozialer Wandel</span></div>
+                  <div class="vocab-item"><span class="en">systemic racism</span><span class="de">systemischer Rassismus</span></div>
+                  <div class="vocab-item"><span class="en">polarization</span><span class="de">Polarisierung</span></div>
+                  <div class="vocab-item"><span class="en">identity crisis</span><span class="de">Identitätskrise</span></div>
+                </div>
                 <h4>The American Dream</h4>
                 <div class="info-block">
+                  <strong>Definition:</strong> Jeder in den USA – unabhängig von Geburtsumständen oder gesellschaftlicher Stellung – kann Erfolg und soziale Mobilität erreichen, solange er hart arbeitet und entschlossen ist.<br>
                   <strong>Ursprung:</strong> Begriff 1931 von Historiker James Truslow Adams geprägt. Wurzeln in der Unabhängigkeitserklärung: "all men are created equal" – Recht auf "life, liberty and the pursuit of happiness".<br>
                   <strong>Kernidee:</strong> Harte Arbeit + Entschlossenheit = Erfolg, unabhängig von Herkunft ("Rags to Riches").<br>
                   <strong>Ziele:</strong> Freiheit, Wohlstand, Sicherheit, Gleichheit.<br>
                   <strong>Voraussetzungen:</strong> Individuelle Verantwortung & harte Arbeit.<br>
                   <strong>Kritik:</strong> Ursprünglich nur für weiße Männer – Theorie (Gleichheit) vs. Realität (Exklusion).<br>
-                  <strong>Heute:</strong> Für viele noch immer Aufstieg + materieller Erfolg. Für andere: Glück & Wohlbefinden jenseits von Materialismus. Inklusivere, gemeinschaftsorientierte Version.
+                  <strong>Heute hinterfragt:</strong> Wirtschaftliche Ungleichheit, ungleiche Bildungschancen.
+                </div>
+                <div class="stat-box">
+                  <strong>📊 Statistik:</strong> Die reichsten 10% der Amerikaner besitzen etwa 70% des nationalen Vermögens.
                 </div>
                 <h4>Past vs. Present – American Dream</h4>
                 <div class="grid"><div class="box"><h3 class="dos-heading">Past Ideal</h3><ul><li>Fokus auf materiellen Wohlstand</li><li>Barrieren: systematische Diskriminierung</li><li>Ziel: Eigenheim besitzen</li><li>Ethos: Hustle Culture</li></ul></div><div class="box"><h3 class="donts-heading">Present Reality</h3><ul><li>Fokus auf Erfüllung & Gleichheit</li><li>Barrieren: Studienschulden, Wohnkosten, Ungleichheit</li><li>Ziel: Miete zahlen & Sinn finden</li><li>Ethos: Work-Life-Balance & mentale Gesundheit</li></ul></div></div>
+                <h4>Immigration in the USA</h4>
+                <div class="info-block">
+                  <strong>Die USA waren schon immer ein Einwanderungsland.</strong><br>
+                  • Rund 14% der US-Bevölkerung sind Einwanderer<br>
+                  <strong>Immigration bringt:</strong><br>
+                  • Kulturelle Vielfalt<br>
+                  • Wirtschaftswachstum<br>
+                  • Innovation<br>
+                  • ABER AUCH: Politische Konflikte, Debatten über nationale Identität
+                </div>
+                <h4>Diversity in the US</h4>
+                <div class="info-block">
+                  Die US-Bevölkerung setzt sich aus verschiedenen Gruppen zusammen:<br>
+                  <strong>White · Hispanic · Black · Asian</strong> – und viele weitere Ethnien.
+                </div>
                 <h4>Division in America – Culture Wars</h4>
                 <div class="info-block">
                   <strong>Culture Wars:</strong> Intensive, polarisierende Konflikte über kulturelle, soziale und moralische Werte – Progressive vs. Konservative.<br>
@@ -1253,17 +1265,6 @@
                   <strong>Eric Garner:</strong> "I can't breathe" 11× – starb in chokehold (2014).<br>
                   <strong>Redlining:</strong> Banken verwehrten Schwarzen Kredite basierend auf Wohngegend. Folgen bis heute: Wealth Gap – für \$100 weißer Familien haben Schwarze \$5.<br>
                   <strong>Systemic Racism:</strong> Bildung (Schulbezirke durch property taxes finanziert), Jobmarkt (2× höhere Arbeitslosigkeit), Justizsystem (höhere Inhaftierungsrate).
-                </div>
-                <h4>Key Vocabulary</h4>
-                <div class="vocab-grid">
-                  <div class="vocab-item"><span class="en">cultural heritage</span><span class="de">kulturelles Erbe</span></div>
-                  <div class="vocab-item"><span class="en">social change</span><span class="de">sozialer Wandel</span></div>
-                  <div class="vocab-item"><span class="en">identity crisis</span><span class="de">Identitätskrise</span></div>
-                  <div class="vocab-item"><span class="en">multicultural society</span><span class="de">multikulturelle Gesellschaft</span></div>
-                  <div class="vocab-item"><span class="en">Melting Pot</span><span class="de">Schmelztiegel (Assimilation)</span></div>
-                  <div class="vocab-item"><span class="en">Salad Bowl</span><span class="de">Salatschüssel (Multikulturalismus)</span></div>
-                  <div class="vocab-item"><span class="en">systemic racism</span><span class="de">systemischer Rassismus</span></div>
-                  <div class="vocab-item"><span class="en">polarization</span><span class="de">Polarisierung</span></div>
                 </div>`
                 },
                 q3: {
@@ -1272,14 +1273,46 @@
                     title: 'Q3: Globalization – Saving the Planet',
                     def: 'Umweltschutz und Nachhaltigkeit – Klimawandel, Plastikverschmutzung, Biodiversitätsverlust. Ursachen: Industrialisierung, Überkonsum, fossile Brennstoffe.',
                     content: `
-                <h4>Key Ideas</h4>
-                <div class="info-block">
-                  <ul><li>Problem: Verschlechterung & Zerstörung des Planeten</li>
-                  <li>Ursachen: Industrialisierung, Überkonsum, fossile Brennstoffe, Fast Fashion, geplante Obsoleszenz</li>
-                  <li>Verantwortung: Individuen vs. Regierungen vs. Konzerne</li>
-                  <li>Lösungen: Erneuerbare Energien, Recycling, nachhaltiger Lebensstil</li>
-                  <li>Dilemma: Wirtschaftswachstum & Jobs vs. strenge Umweltgesetze</li></ul>
+                <h4>Wichtige Begriffe (Important Vocab)</h4>
+                <div class="vocab-grid">
+                  <div class="vocab-item"><span class="en">global warming</span><span class="de">globale Erwärmung</span></div>
+                  <div class="vocab-item"><span class="en">greenhouse gases</span><span class="de">Treibhausgase</span></div>
+                  <div class="vocab-item"><span class="en">renewable energy</span><span class="de">erneuerbare Energie</span></div>
+                  <div class="vocab-item"><span class="en">carbon footprint</span><span class="de">CO₂-Fußabdruck</span></div>
+                  <div class="vocab-item"><span class="en">sustainability</span><span class="de">Nachhaltigkeit</span></div>
+                  <div class="vocab-item"><span class="en">overconsumption</span><span class="de">Überkonsum</span></div>
+                  <div class="vocab-item"><span class="en">tipping point</span><span class="de">Kipppunkt</span></div>
+                  <div class="vocab-item"><span class="en">biodiversity</span><span class="de">Biodiversität</span></div>
+                  <div class="vocab-item"><span class="en">deforestation</span><span class="de">Abholzung</span></div>
+                  <div class="vocab-item"><span class="en">ecological footprint</span><span class="de">ökologischer Fußabdruck</span></div>
+                  <div class="vocab-item"><span class="en">green colonialism</span><span class="de">Grüner Kolonialismus</span></div>
                 </div>
+                <h4>Major Environmental Problems</h4>
+                <div class="info-block">
+                  <ul><li><strong>Klimawandel</strong> (Climate Change)</li>
+                  <li><strong>Plastikverschmutzung</strong> (Plastic Pollution)</li>
+                  <li><strong>Abholzung</strong> (Deforestation)</li>
+                  <li><strong>Luftverschmutzung</strong> (Air Pollution)</li>
+                  <li><strong>Verlust der Biodiversität</strong> (Loss of Biodiversity)</li></ul>
+                </div>
+                <h4>Key Statistics</h4>
+                <div class="stat-box">
+                  • Die Erde hat sich seit dem späten 19. Jahrhundert um etwa <strong>1,1°C</strong> erwärmt.<br>
+                  • Rund <strong>8 Millionen Tonnen Plastik</strong> gelangen jährlich in die Ozeane.<br>
+                  • Erneuerbare Energien produzieren etwa <strong>30% des globalen Stroms</strong>.<br>
+                  • CO₂-Kipppunkt (1,5°C) wurde 2024 erstmals in der Geschichte überschritten.<br>
+                  • Unter aktuellen Entwicklungen: Kosten des Klimawandels könnten <strong>11–14% des globalen BIP</strong> erreichen.
+                </div>
+                <h4>Causes of Environmental Problems</h4>
+                <div class="info-block">
+                  <ul><li>Verbrennung fossiler Brennstoffe (burning fossil fuels)</li>
+                  <li>Industrielle Produktion (industrial production)</li>
+                  <li>Überkonsum (overconsumption)</li>
+                  <li>Abholzung (deforestation)</li>
+                  <li>Fast Fashion & geplante Obsoleszenz</li></ul>
+                </div>
+                <h4>Possible Solutions</h4>
+                <div class="grid"><div class="box"><h3 class="dos-heading">Regierung</h3><ul><li>Internationale Klimaabkommen (z.B. Pariser Abkommen)</li><li>Umweltgesetze</li><li>Investition in erneuerbare Energien</li></ul></div><div class="box"><h3 class="dos-heading">Individuum</h3><ul><li>CO₂-Fußabdruck reduzieren</li><li>Nachhaltiger Lebensstil (Veganismus, weniger Plastik)</li><li>Fridays for Future – Aktivismus</li></ul></div></div>
                 <h4>Plastic Consumption – 5 Steps (dt. Beispiel)</h4>
                 <div class="struct-steps">
                   <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Vermeiden:</strong> Plastiktüten verboten (seit 2022), unverlierbare Verschlusskappen, Mehrwegbehälter</div></div>
@@ -1307,24 +1340,11 @@
                   <strong>Hyperbolic Discounting:</strong> Gegenwart wird als wichtiger wahrgenommen als Zukunft – erschwert Handeln bei langsamen, komplexen Herausforderungen.<br>
                   <strong>Mangelnde Sorge für künftige Generationen:</strong> Menschen kümmern sich meist nur um wenige Generationen der eigenen Familie.
                 </div>
-                <h4>Key Vocabulary</h4>
-                <div class="vocab-grid">
-                  <div class="vocab-item"><span class="en">carbon footprint</span><span class="de">CO₂-Fußabdruck</span></div>
-                  <div class="vocab-item"><span class="en">renewable energy</span><span class="de">erneuerbare Energie</span></div>
-                  <div class="vocab-item"><span class="en">climate crisis</span><span class="de">Klimakrise</span></div>
-                  <div class="vocab-item"><span class="en">sustainability</span><span class="de">Nachhaltigkeit</span></div>
-                  <div class="vocab-item"><span class="en">overconsumption</span><span class="de">Überkonsum</span></div>
-                  <div class="vocab-item"><span class="en">tipping point</span><span class="de">Kipppunkt</span></div>
-                  <div class="vocab-item"><span class="en">biodiversity</span><span class="de">Biodiversität</span></div>
-                  <div class="vocab-item"><span class="en">deforestation</span><span class="de">Abholzung</span></div>
-                  <div class="vocab-item"><span class="en">ecological footprint</span><span class="de">ökologischer Fußabdruck</span></div>
-                  <div class="vocab-item"><span class="en">green colonialism</span><span class="de">Grüner Kolonialismus</span></div>
-                </div>
-                <h4>Recent Developments</h4>
-                <div class="info-block">
+                <div class="stat-box">
+                  <strong>📊 Recent Developments:</strong><br>
                   • Letzte 11 Jahre (2015–2025) waren die heißesten seit Aufzeichnung<br>
-                  • CO₂-Kipppunkt (1,5°C) erstmals überschritten (2024)<br>
-                  • Unter aktuellen Entwicklungen: Kosten des Klimawandels könnten 11–14% des globalen BIP erreichen<br>
+                  • CO₂-Kipppunkt (1,5°C) 2024 erstmals überschritten<br>
+                  • Kosten des Klimawandels könnten 11–14% des globalen BIP erreichen<br>
                   • USA: Austritt aus Pariser Abkommen
                 </div>`
                 },
@@ -1334,20 +1354,48 @@
                     title: 'Q4: The Impact of Media on Society',
                     def: 'Medien formen Meinungen, Werte und Verhalten. Positive Aspekte: Informationszugang, Bildung, Vernetzung. Negative: Fake News, Manipulation, Sucht.',
                     content: `
+                <h4>Wichtige Begriffe (Important Vocab)</h4>
+                <div class="vocab-grid">
+                  <div class="vocab-item"><span class="en">fake news</span><span class="de">Falschnachrichten / Desinformation</span></div>
+                  <div class="vocab-item"><span class="en">filter bubble</span><span class="de">Filterblase – nur bestätigende Infos</span></div>
+                  <div class="vocab-item"><span class="en">echo chamber</span><span class="de">Echokammer – Meinungen werden verstärkt</span></div>
+                  <div class="vocab-item"><span class="en">media literacy</span><span class="de">Medienkompetenz</span></div>
+                  <div class="vocab-item"><span class="en">influencer culture</span><span class="de">Einfluss von Social-Media-Persönlichkeiten</span></div>
+                  <div class="vocab-item"><span class="en">digital footprint</span><span class="de">digitaler Fußabdruck</span></div>
+                  <div class="vocab-item"><span class="en">media bias</span><span class="de">Medienvoreingenommenheit</span></div>
+                  <div class="vocab-item"><span class="en">cancel culture</span><span class="de">Cancel Culture</span></div>
+                  <div class="vocab-item"><span class="en">cyberbullying</span><span class="de">Cybermobbing</span></div>
+                  <div class="vocab-item"><span class="en">attention economy</span><span class="de">Aufmerksamkeitsökonomie</span></div>
+                  <div class="vocab-item"><span class="en">data mining</span><span class="de">Datengewinnung</span></div>
+                  <div class="vocab-item"><span class="en">digital divide</span><span class="de">digitale Kluft</span></div>
+                </div>
+                <h4>Types of Media</h4>
+                <div class="info-block">
+                  <strong>Traditional:</strong> Newspaper, Television, Radio<br>
+                  <strong>Digital:</strong> Social Media, Online News, Blogs, Podcasts
+                </div>
                 <h4>Key Ideas</h4>
                 <div class="info-block">
                   <ul><li>Medien formen Meinungen, Werte und Verhalten</li>
-                  <li>Positiv: Informationszugang, Bildung, Vernetzung, digitale Aktivismus</li>
+                  <li>Positiv: Informationszugang, Bildung, Vernetzung, digitaler Aktivismus</li>
                   <li>Negativ: Fake News, Manipulation, Sucht, Cyberbullying</li>
                   <li>Einfluss auf Demokratie & öffentliche Meinung</li>
                   <li>Rolle von Algorithmen & Filterblasen</li></ul>
+                </div>
+                <h4>Benefits vs. Risks</h4>
+                <div class="grid"><div class="box"><h3 class="dos-heading">Benefits</h3><ul><li>Schneller Zugang zu Informationen</li><li>Globale Kommunikation</li><li>Politische Bewusstseinsbildung & Partizipation</li><li>Stimme für marginalisierte Gruppen (BLM, #MeToo)</li></ul></div><div class="box"><h3 class="donts-heading">Risks</h3><ul><li>Verbreitung von Fehlinformationen (Fake News)</li><li>Sucht nach sozialen Medien</li><li>Negative Auswirkungen auf mentale Gesundheit</li><li>Politische Polarisierung</li></ul></div></div>
+                <h4>Key Statistics</h4>
+                <div class="stat-box">
+                  • Menschen verbringen durchschnittlich rund <strong>2,5 Stunden pro Tag</strong> auf sozialen Medien.<br>
+                  • Mehr als <strong>60% der Menschen</strong> beziehen ihre Nachrichten online.<br>
+                  • Rund <strong>50% der Teenager</strong> sagen, dass soziale Medien ihre mentale Gesundheit beeinträchtigen.
                 </div>
                 <h4>Media & Democracy (Political Dimension)</h4>
                 <div class="info-block">
                   <strong>Fake News & Desinformation:</strong> Manipulation von Wahlen & Meinungen<br>
                   <strong>Echo Chambers & Filter Bubbles:</strong> Polarisierung durch Algorithmen<br>
                   <strong>Citizen Journalism:</strong> Jeder ist Reporter (Blogs/Twitter) – schnell aber ungeprüft<br>
-                  <strong>Digital Activism:</strong> Soziale Medien geben marginalisierten Gruppen eine Stimme (Black Lives Matter, #MeToo)<br>
+                  <strong>Digital Activism:</strong> Soziale Medien geben marginalisierten Gruppen eine Stimme<br>
                   <strong>Überwachung:</strong> Verlust der Privatsphäre gegen Sicherheit/Bequemlichkeit<br>
                   <strong>Digital Divide:</strong> Kluft zwischen denen mit/ohne Internetzugang → Ungleichheit
                 </div>
@@ -1371,19 +1419,6 @@
                 <div class="info-block">
                   <strong>Bots:</strong> Automatisierte Accounts – nutzen Trending Hashtags, imitieren menschliches Verhalten (liken, teilen). Zunehmend für politische Zwecke genutzt. Erkennbar an: leeren Profilen, seltsamen Nutzernamen, keinen echten Fotos, vielen Bot-Freunden.<br>
                   <strong>Trolls:</strong> Echte Menschen – kommentieren/share im Sinne einer Agenda. Versuchen Meinungen zu beeinflussen. Können mehrere Accounts betreiben.
-                </div>
-                <h4>Key Vocabulary</h4>
-                <div class="vocab-grid">
-                  <div class="vocab-item"><span class="en">fake news</span><span class="de">Falschnachrichten</span></div>
-                  <div class="vocab-item"><span class="en">echo chamber</span><span class="de">Echokammer</span></div>
-                  <div class="vocab-item"><span class="en">filter bubble</span><span class="de">Filterblase</span></div>
-                  <div class="vocab-item"><span class="en">digital footprint</span><span class="de">digitaler Fußabdruck</span></div>
-                  <div class="vocab-item"><span class="en">media bias</span><span class="de">Medienvoreingenommenheit</span></div>
-                  <div class="vocab-item"><span class="en">cancel culture</span><span class="de">Cancel Culture</span></div>
-                  <div class="vocab-item"><span class="en">cyberbullying</span><span class="de">Cybermobbing</span></div>
-                  <div class="vocab-item"><span class="en">attention economy</span><span class="de">Aufmerksamkeitsökonomie</span></div>
-                  <div class="vocab-item"><span class="en">data mining</span><span class="de">Datengewinnung</span></div>
-                  <div class="vocab-item"><span class="en">digital divide</span><span class="de">digitale Kluft</span></div>
                 </div>`
                 }
             };
@@ -1469,7 +1504,9 @@
             // ─────── ALLE KATEGORIEN ───────
             const mainCategories = [
                 { id: 'textsorten', label: 'Textsorten', subIds: textTypesData.map(d => d.id) },
-                { id: 'topics', label: 'Abiturthemen', subIds: ['topic-q1', 'topic-q2', 'topic-q3', 'topic-q4'] },
+                { id: 'topics', label: 'Abiturthemen', subIds: ['topic-q1', 'topic-q2', 'topic-q3',
+                        'topic-q4'
+                    ] },
                 { id: 'dict', label: 'Academic Dictionary', subIds: ['academic-dict'] },
                 { id: 'checklist', label: 'Writing Checklist', subIds: ['writing-checklist'] }
             ];
@@ -1482,20 +1519,15 @@
 
             // Alle Karten bauen
             const allCards = {};
-            // Textsorten-Karten
             textTypesData.forEach(function(item) {
                 allCards[item.id] = buildTextTypeCard(item);
             });
-            // Topics-Karten
             Object.values(topicsData).forEach(function(t) {
                 allCards[t.id] = buildTopicCard(t);
             });
-            // Academic Dictionary
             allCards['academic-dict'] = buildGenericCard(academicDictData);
-            // Writing Checklist
             allCards['writing-checklist'] = buildGenericCard(writingChecklistData);
 
-            // An DOM anhängen
             Object.values(allCards).forEach(function(c) { cardsContainer.appendChild(c); });
 
             function buildTextTypeCard(item) {
@@ -1610,7 +1642,6 @@
                 showCard(currentSubId);
             }
 
-            // Main Tabs bauen
             mainCategories.forEach(function(cat, i) {
                 var mt = document.createElement('button');
                 mt.className = 'main-tab' + (i === 0 ? ' active' : '');
@@ -1630,10 +1661,8 @@
                 mainTabBar.appendChild(mt);
             });
 
-            // Initial
             buildSubTabs('textsorten');
 
-            // Keyboard-Navigation Sub-Tabs
             subTabBar.addEventListener('keydown', function(e) {
                 var tabs = Array.from(subTabBar.querySelectorAll('.sub-tab'));
                 var idx = tabs.indexOf(document.activeElement);
@@ -1649,7 +1678,6 @@
                 if (nIdx !== idx) { tabs[nIdx].focus();
                     tabs[nIdx].click(); }
             });
-            // Keyboard-Navigation Main-Tabs
             mainTabBar.addEventListener('keydown', function(e) {
                 var tabs = Array.from(mainTabBar.querySelectorAll('.main-tab'));
                 var idx = tabs.indexOf(document.activeElement);
